@@ -1,0 +1,6 @@
+project: savantenvs/ffmpeg-rockchip
+target: target_sws_fuzzer
+cmds:
+  - cmd: /mayhem/target_sws_fuzzer
+    libfuzzer: true
+    timeout: 10

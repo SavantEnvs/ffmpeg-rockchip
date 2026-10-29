@@ -1,0 +1,9 @@
+project: savantenvs/ffmpeg-rockchip
+target: target_bsf_h264_mp4toannexb_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/target_bsf_h264_mp4toannexb_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/target_bsf_h264_mp4toannexb_fuzzer
+    libfuzzer: true
+    timeout: 10
